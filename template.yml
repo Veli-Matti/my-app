@@ -56,6 +56,6 @@ Resources:
           DDB_TABLE: !Ref ddbTable
       Policies:
         - DynamoDBCrudPolicy:
-          TableName: !Ref ddbTable
+            TableName: !Ref ddbTable
         # Give Lambda basic execution Permission to the helloFromLambda
         - AWSLambdaBasicExecutionRole
